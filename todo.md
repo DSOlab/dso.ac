@@ -2,18 +2,18 @@
 
 Code                  |Set at    | Label                       | Status            | Prequisities | Comment
 ----------------------|----------|-----------------------------|-------------------|--------------|-------
-[13012101](#13012101) | 13/01/21 | SQL Server                  |                   |              | (fundamental)[#dso-fundamentals]
-[13012102](#13012102) | 13/01/21 | Apache Server               |                   |              | (fundamental)[#dso-fundamentals]
-[13012103](#13012103) | 13/01/21 | Processing Server(s)        |                   |              | (fundamental)[#dso-fundamentals]
-[13012104](#13012104) | 13/01/21 | Redundant Processing Server |                   |              | (fundamental)[#dso-fundamentals]
-[13012105](#13012105) | 13/01/21 | DSO Website                 |                   | 13012101     | (fundamental)[#dso-fundamentals]
-[13012106](#13012106) | 13/01/21 | Upgrade Bernese AP          |                   | 13012103     | (euref DWG)[#euref-dens], (euref VWG)[euref-vels]
-[13012107](#13012107) | 13/01/21 | Test Bernese AP             |                   | 13012106     | (euref DWG)[#euref-dens]
-[13012108](#13012108) | 13/01/21 | Process old data            |                   | 13012107     | (euref DWG)[#euref-dens]
-[13012111](#13012111) | 13/01/21 | Automate SINEX distribution |                   | 13012107     | (euref DWG)[#euref-dens]
-[13012109](#13012109) | 13/01/21 | Time-Series SW              |                   |              | (euref VWG)[euref-vels]
-[13012110](#13012110) | 13/01/21 | EUREF Velocities WG         |                   | 13012109     | (euref VWG)[euref-vels]
-[13012112](#13012112) | 13/01/21 | Get RTCM standards          |                   |              | (real time)[real-time-proc]
+[13012101](#13012101) | 13/01/21 | SQL Server                  |                   |              | [fundamental](#dso-fundamentals)
+[13012102](#13012102) | 13/01/21 | Apache Server               |                   |              | [fundamental](#dso-fundamentals)
+[13012103](#13012103) | 13/01/21 | Processing Server(s)        |                   |              | [fundamental](#dso-fundamentals)
+[13012104](#13012104) | 13/01/21 | Redundant Processing Server |                   |              | [fundamental](#dso-fundamentals)
+[13012105](#13012105) | 13/01/21 | DSO Website                 |                   | 13012101     | [fundamental](#dso-fundamentals)
+[13012106](#13012106) | 13/01/21 | Upgrade Bernese AP          |                   | 13012103     | [euref DWG](#euref-dens), [euref VWG](#euref-vels)
+[13012107](#13012107) | 13/01/21 | Test Bernese AP             |                   | 13012106     | [euref DWG](#euref-dens)
+[13012108](#13012108) | 13/01/21 | Process old data            |                   | 13012107     | [euref DWG](#euref-dens)
+[13012111](#13012111) | 13/01/21 | Automate SINEX distribution |                   | 13012107     | [euref DWG](#euref-dens)
+[13012109](#13012109) | 13/01/21 | Time-Series SW              |                   |              | [euref VWG](#euref-vels)
+[13012110](#13012110) | 13/01/21 | EUREF Velocities WG         |                   | 13012109     | [euref VWG](#euref-vels)
+[13012112](#13012112) | 13/01/21 | Get RTCM standards          |                   |              | [real time](#real-time-proc)
 
 
 # Goals
