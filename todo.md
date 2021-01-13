@@ -1,19 +1,42 @@
 # List of things we have to do
 
-Code                  |Set at    | Label                       | Comment           | Prequisities | Status
+Code                  |Set at    | Label                       | Status            | Prequisities | Comment
 ----------------------|----------|-----------------------------|-------------------|--------------|-------
-[13012101](#13012101) | 13/01/21 | SQL Server                  |                   |              | [ ]
-[13012102](#13012102) | 13/01/21 | Apache Server               |                   |              | [ ]
-[13012103](#13012103) | 13/01/21 | Processing Server(s)        |                   |              | [ ]
-[13012104](#13012104) | 13/01/21 | Redundant Processing Server |                   |              | [ ]
-[13012105](#13012105) | 13/01/21 | DSO Website                 |                   | 13012101     | [ ]
-[13012106](#13012106) | 13/01/21 | Upgrade Bernese AP          |                   | 13012103     | [ ]
-[13012107](#13012107) | 13/01/21 | Test Bernese AP             |                   | 13012106     | [ ]
-[13012108](#13012108) | 13/01/21 | Process old data            |                   | 13012107     | [ ]
-[13012111](#13012111) | 13/01/21 | Automate SINEX distribution |                   | 13012107     | [ ]
-[13012109](#13012109) | 13/01/21 | Time-Series SW              |                   |              | [ ]
-[13012110](#13012110) | 13/01/21 | EUREF Velocities WG         |                   | 13012109     | [ ]
+[13012101](#13012101) | 13/01/21 | SQL Server                  |                   |              | (fundamental)[#dso-fundamentals]
+[13012102](#13012102) | 13/01/21 | Apache Server               |                   |              | (fundamental)[#dso-fundamentals]
+[13012103](#13012103) | 13/01/21 | Processing Server(s)        |                   |              | (fundamental)[#dso-fundamentals]
+[13012104](#13012104) | 13/01/21 | Redundant Processing Server |                   |              | (fundamental)[#dso-fundamentals]
+[13012105](#13012105) | 13/01/21 | DSO Website                 |                   | 13012101     | (fundamental)[#dso-fundamentals]
+[13012106](#13012106) | 13/01/21 | Upgrade Bernese AP          |                   | 13012103     | (euref DWG)[#euref-dens], (euref VWG)[euref-vels]
+[13012107](#13012107) | 13/01/21 | Test Bernese AP             |                   | 13012106     | (euref DWG)[#euref-dens]
+[13012108](#13012108) | 13/01/21 | Process old data            |                   | 13012107     | (euref DWG)[#euref-dens]
+[13012111](#13012111) | 13/01/21 | Automate SINEX distribution |                   | 13012107     | (euref DWG)[#euref-dens]
+[13012109](#13012109) | 13/01/21 | Time-Series SW              |                   |              | (euref VWG)[euref-vels]
+[13012110](#13012110) | 13/01/21 | EUREF Velocities WG         |                   | 13012109     | (euref VWG)[euref-vels]
+[13012112](#13012112) | 13/01/21 | Get RTCM standards          |                   |              | (real time)[real-time-proc]
 
+
+# Goals
+
+## EUREF Densification WG <a id="euref-dens"></a>
+Continue DSOs contribution to EUREF Densification WG
+
+## EUREF Velocities WG <a id="euref-vels"></a>
+Start DSOs contribution to EUREF Velocities WG
+
+## Near-Real-Time Processing <a id="near-real-time-proc"></a>
+Automatic processing via Bernese in near-real-time
+
+## Real-Time Processing <a id="real-time-proc"></a>
+Work towards processing in real-time
+
+## Low Cost Receivers <a id="low-cost-rec"></a>
+Work towards processing loca-cost-receiver datasets
+
+## Fundamentals <a id="dso-fundamentals"></a>
+Fundamental groundwork
+
+# ToDo List
 
 ## SQL Server <a id="13012101"></a>
 Setup an SQLServer for automatic processing
@@ -47,3 +70,6 @@ Contact the EUREF Velocities Working Group and try to contribute. We need to hav
 
 ## Automate SINEX distribution <a id="13012111"></a>
 Automate the publishing of SINEX files to EUREF Densification WG. E.g. once every two weeks
+
+## Get RTCM Standards <a id="13012112"></a>
+https://www.rtcm.org/publications
