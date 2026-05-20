@@ -13,24 +13,25 @@ Mail Address               : Zografou Campus, 9, Iroon Polytechniou str
 Country                    : Greece
 
 Primary Contact
+Contact Name               : Dr. Demitris Anastasiou
+Telephone                  : +30 2107722669
+Fax                        :
+E-Mail                     : danastasiou@mail.ntua.gr
+
+Secondary Contact
 Contact Name               : Xanthos Papanikolaou
 Telephone                  : +30 210 7722592
 Fax                        : 
 E-Mail                     : xanthos@mail.ntua.gr
 
-Secondary Contact
-Contact Name               : Prof. Demitris Paradissis
-Telephone                  : +30 210 773 2666
-Fax                        : 
-E-Mail                     : dempar@central.ntua.gr
-
 Third Contact
-Contact Name               : Dr. Demitris Anastasiou
+Contact Name               : 
 Telephone                  : 
 Fax                        :
-E-Mail                     : danast@mail.ntua.gr
+E-Mail                     : 
 
 Software Used              : Bernese GNSS Software Version 5.2
+                           : Bernese GNSS Software Version 5.4
 
 Stat. Included in Analysis : 
 9-ID      start stop network
@@ -118,54 +119,142 @@ DSOwwwwd.SNX Final, daily solution for GPS week 'wwww' and day of week 'd'
 				
 EUREF solutions sent to    : kgo.gnssnet.hu
 
-Report generated           : 17/03/2019
-Report updated             : 
+Report generated           : 17.03.2019
+Report updated             : 20.05.2026
 
 
 ----------------------------------------------------------------------------- 
                            MEASUREMENT MODELS                              
 -----------------------------------------------------------------------------
- Preprocessing    : 
+ Preprocessing    : Phase preprocessing in a baseline by baseline mode     
+                    using triple-differences. In most cases, cycle slips   
+                    are fixed looking simultaneously at different linear   
+                    combinations of two frequencies. If a cycle slip cannot
+                    be fixed reliably, bad data points are removed or new  
+                    ambiguities are set up. In addition, a data screening  
+                    step on the basis of weighted postfit residuals is     
+                    performed. Outliers are removed.  
 
- Basic Observable : 
- 
- Modelled         : 
- observable                                                               
+ Basic Observable : GPS/GLONASS/Galileo(/BDS/QZSS) carrier phase; code only
+                    used for receiver clock synchronization and MW         
+                    ambiguity resolution                                   
+                    Priorities for observation selection:                  
+                      G    L1   L1W L1C L1X                                
+                      G    L2   L2W L2C L2D L2P L2X L2S L2L                
+                      G    C1   C1W C1C C1X                                
+                      G    C2   C2W C2C C2D C2P C2X C2S C2L                
+                      R    L1   L1P L1C L1X                                
+                      R    L2   L2P L2C L2X                                
+                      R    C1   C1P C1C C1X                                
+                      R    C2   C2P C2C C2X                                
+                      E    L1   L1C L1X                                    
+                      E    L2   L5Q L5X L5I                               
+                      E    C1   C1C C1X                                    
+                      E    C2   C5Q C5X C5I                                
+                  |--------------------------------------------------------|
+                    Elevation angle cutoff :  3 degrees                    
+                    Sampling rate          :  3 minutes                    
+                    Weighting              :  6 mm for double-differenced  
+                                              ionosphere-free phase        
+                                              observations at zenith;      
+                                              elevation-dependent weighting
+                                              function 1/cos(z)**2         
 
- Ground antenna   : 
- phase center       
- calibrations       
+ Modelled         : Double differences, ionosphere-free linear combination 
+ observable         of two frequencies (see selection above)                                                       
 
- Troposphere      : 
+ Ground antenna   : "absolute" elevation- & azimuth-dependent (when  
+ phase center       available) PCVs & offsets from ARP applied from
+ calibrations       file igs20_wwww.atx
+                   
+                    Receiver antenna models GNSS-specific correctiopns are
+                    applied (as far as available).
+                    Final: Observations without antenna corrections for the 
+                    related GNSS are ignored        
                     
- Ionosphere       : 
+                    Calibration applied if given in file igs20_wwww.atx;
+                    otherwise radome effect neglected (radome => NONE) 
+                    Final: Stations with a not calibrated antenna/radome 
+                    combination are ignored 
+
+
+ Troposphere      : ECMWF-based hydrostatic delay mapped with hydrostatic  
+                    VMF3. Coefficients from 3-hourly global grids.         
+                    GPT3/GMF3 in the rapid and ultra-rapid solution.       
+                    Gradient model: none      
+                    
+ Ionosphere       : ION model from CODE is used
+
+                    This model is used only for ambiguity resolution.
+                    Ionosphere is not modelled in final solution -
+                    eliminated by iono-free linear combination of L1 and L2.
                     
 
 -----------------------------------------------------------------------------
                  ESTIMATED PARAMETERS (APRIORI VALUES & SIGMAS)              
 ----------------------------------------------------------------------------- 
- Adjustment       : 
+ Adjustment       : Weighted least-squares algorithms  
 
- Rejection Criter.: 
+ Rejection Criter.: Outliers are detected during pre-processing steps, thus
+                    there is no rejection in the final parameter estimation.
 
- Station          : 
- coordinates        
+ Station          : since week 1934 : BRUX, GRAS, METS, PENC, POLV, SOFI
+ coordinates                          used for minimum constraints to IGS14
 
- Troposphere      : 
+ Troposphere      : Zenith delay: estimated for each station in intervals   
+                                  of 2 hours. Loose relative constraints of 
+                                  5 m are applied. Piece-wise, linear       
+                                  parametrization, allowing for connection  
+                                  of the parameters at day boundaries.      
+                  |--------------------------------------------------------|
+                    Zenith delay epochs: every two hours starting at        
+                                         midnight                           
+                  |--------------------------------------------------------|
+                    Mapping function: wet VMF3 for final; GMF3 for rapid    
+                  |--------------------------------------------------------|
+                    Gradients: pairs of horizontal delay gradient           
+                               parameters are estimated in N-S and E-W      
+                               direction for each station in intervals of   
+                               24 hours. Loose relative constraints of      
+                               5 m are applied. Piece-wise, linear          
+                               parametrization, allowing for connection of  
+                               the parameters at day boundaries.            
+                               Details about the gradient model can be      
+                               found in Rothacher et al. (1997).            
+                               Refined gradient model used, see Chen and    
+                               Herring (1997).                              
 
- Ionospheric      : 
+ Ionospheric      : Not estimated in ionosphere-free analyses               
+ correction                                                                 
+                    One scaling factor for 2nd and 3rd order terms and ray  
+                    bending is setup to switch the components on or off     
+                    on normal equation level.                               
+                    The products are generated with considering all three   
+                    correction components.     
 
- Ambiguity        : 
+ Ambiguity        : Ambiguities are resolved in a baseline-by-baseline     
+                    mode performing the following steps:                   
+                    . Melbourne-Wuebbena approach (< 6000 km)              
+                    . Quasi-Ionosphere-Free (QIF) approach (< 2000 km)     
+                      (also for GLONASS, same frequencies)                 
+                    . Phase-based widelane/narrowlane method (< 200 km)    
+                      (also for GLONASS, no restrictions)                  
+                    . Direct L1/L2 method, also for GLONASS (< 20 km)      
+                      (also for GLONASS, no restrictions)                  
+                    GNSS-derived global ionosphere map information is used 
+                    to support the code-less methods.                      
 
- Satellite clock  : 
- bias               
+ Satellite clock  : Satellite clock corrections are not estimated but
+ bias               eliminated by forming double differences.
 
- Receiver clock   : 
- bias               
+ Receiver clock   : Receiver clock corrections are estimated as part of the
+ bias               preprocessing using code measurements. They are finally
+                    eliminated by forming double differences.
 
- Orbits and ERPs  : 
+ Orbits and ERPs  : CODE final GNSS orbit and ERP information is adopted.
 
- Tidal            : 
- displacements      
-
+ Tidal            : Solid earth tidal displacements are modeled according to
+ displacements      IERS 2010 conventions. Ocean loading corrections are
+                    computed based on Scherneck's amplitudes and phases. No
+                    atmospheric loading corrections are taken into account.
 -----------------------------------------------------------------------------  

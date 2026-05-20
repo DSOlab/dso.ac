@@ -1,0 +1,171 @@
+-------------------------------------------------------------------------------
+                   EPN DENSIFICATION ANALYSIS CENTRE
+-------------------------------------------------------------------------------
+
+Agency acronym             : DSO
+
+Networks processed         : DSO
+
+Institution                : Dionysos Satellite Observatory, National Technical University of Athens
+Mail Address               : Zografou Campus, 9, Iroon Polytechniou str
+                           : 15780 Zografou
+
+Country                    : Greece
+
+Primary Contact
+Contact Name               : Xanthos Papanikolaou
+Telephone                  : +30 210 7722592
+Fax                        : 
+E-Mail                     : xanthos@mail.ntua.gr
+
+Secondary Contact
+Contact Name               : Prof. Demitris Paradissis
+Telephone                  : +30 210 773 2666
+Fax                        : 
+E-Mail                     : dempar@central.ntua.gr
+
+Third Contact
+Contact Name               : Dr. Demitris Anastasiou
+Telephone                  : 
+Fax                        :
+E-Mail                     : danast@mail.ntua.gr
+
+Software Used              : Bernese GNSS Software Version 5.2
+
+Stat. Included in Analysis : 
+9-ID      start stop network
+AKYR00GRC 1400  1930 DSO
+ANKR00TUR 1400  1930 DSO
+ANOO00GRC 1414  1930 DSO
+ARK200GRC 1419  1930 DSO
+ARKI00GRC 1400  1930 DSO
+ARTU00RUS 1400  1930 DSO
+ATAL00GRC 1525  1930 DSO
+ATRS00GRC 1400  1930 DSO
+AUT100GRC 1400  1930 DSO
+BOR100POL 1400  1930 DSO
+BUCU00ROU 1600  1930 DSO
+DION00GRC 1400  1930 DSO
+DIOP00GRC 1455  1930 DSO
+DUTH00GRC 1498  1930 DSO
+DYNG00GRC 1600  1930 DSO
+EYPA00GRC 1400  1930 DSO
+GLSV00UKR 1400  1930 DSO
+GVDS00GRC 1400  1930 DSO
+HERS00GBR 1400  1930 DSO
+HOFN00ISL 1400  1930 DSO
+KAS000GRC 1421  1930 DSO
+KATC00GRC 1400  1930 DSO
+KERY00GRC 1400  1930 DSO
+KIPO00GRC 1600  1930 DSO
+KITH00GRC 1400  1930 DSO
+KLOK00DEU 1488  1930 DSO
+KOUN00GRC 1400  1930 DSO
+KRPS00GRC 1600  1930 DSO
+KRYO00GRC 1400  1930 DSO
+KTCH00GRC 1600  1930 DSO
+LARM00GRC 1600  1930 DSO
+LEMN00GRC 1435  1930 DSO
+LEPE00GRC 1600  1930 DSO
+LIDO00GRC 1427  1930 DSO
+MAT100ITA 1400  1930 DSO
+MDVJ00RUS 1400  1930 DSO
+METS00FIN 1400  1930 DSO
+MLOS00GRC 1400  1930 DSO
+MTHA00GRC 1400  1930 DSO
+MTHO00GRC 1400  1930 DSO
+NAFP00GRC 1600  1930 DSO
+NEAB00GRC 1600  1930 DSO
+NEAP00GRC 1400  1930 DSO
+NICO00CYP 1417  1930 DSO
+NOA100GRC 1400  1930 DSO
+NOT100ITA 1400  1930 DSO
+ONSA00SWE 1400  1930 DSO
+PAT000GRC 1516  1930 DSO
+PDEL00PRT 1400  1930 DSO
+PENC00HUN 1585  1930 DSO
+POLV00UKR 1400  1930 DSO
+PONT00PRT 1415  1930 DSO
+PRKV00GRC 1434  1930 DSO
+PSAR00GRC 1408  1930 DSO
+PVOG00GRC 1600  1930 DSO
+PYL200GRC 1470  1930 DSO
+PYLO00GRC 1600  1930 DSO
+RAMO00ISR 1400  1930 DSO
+RETS00GRC 1600  1930 DSO
+RLSO00GRC 1522  1930 DSO
+SKYR00GRC 1600  1930 DSO
+SNTR00GRC 1400  1930 DSO
+SPAN00GRC 1428  1930 DSO
+SPRT00GRC 1400  1930 DSO
+STEF00GRC 1600  1930 DSO
+TILO00GRC 1400  1930 DSO
+TRO100NOR 1400  1930 DSO
+TUC200GRC 1400  1930 DSO
+VALY00GRC 1600  1930 DSO
+VASS00GRC 1400  1930 DSO
+VLSM00GRC 1425  1930 DSO
+WSRT00NLD 1400  1930 DSO
+WTZR00DEU 1400  1930 DSO
+XRSO00GRC 1400  1930 DSO
+YEBE00ESP 1400  1930 DSO
+ZECK00RUS 1400  1930 DSO
+ZIMM00CHE 1400  1930 DSO
+
+
+EPN Densification solutions generated  : 
+DSOwwwwd.SNX Final, daily solution for GPS week 'wwww' and day of week 'd'
+				
+EUREF solutions sent to    : kgo.gnssnet.hu
+
+Report generated           : 17/03/2019
+Report updated             : 
+
+
+----------------------------------------------------------------------------- 
+                           MEASUREMENT MODELS                              
+-----------------------------------------------------------------------------
+ Preprocessing    : 
+
+ Basic Observable : 
+ 
+ Modelled         : 
+ observable                                                               
+
+ Ground antenna   : 
+ phase center       
+ calibrations       
+
+ Troposphere      : 
+                    
+ Ionosphere       : 
+                    
+
+-----------------------------------------------------------------------------
+                 ESTIMATED PARAMETERS (APRIORI VALUES & SIGMAS)              
+----------------------------------------------------------------------------- 
+ Adjustment       : 
+
+ Rejection Criter.: 
+
+ Station          : 
+ coordinates        
+
+ Troposphere      : 
+
+ Ionospheric      : 
+
+ Ambiguity        : 
+
+ Satellite clock  : 
+ bias               
+
+ Receiver clock   : 
+ bias               
+
+ Orbits and ERPs  : 
+
+ Tidal            : 
+ displacements      
+
+-----------------------------------------------------------------------------  
